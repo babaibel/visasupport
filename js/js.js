@@ -19,7 +19,10 @@ $(function() {
 		$mainCarousel.carousel('next');
 		return false;
 	});
-
-	
-
+});
+$(function() {
+	$('.js-select').selectize({
+		create: true,
+		sortField: 'text'
+	});
 });

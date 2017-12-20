@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600&subset=cyrillic,cyrillic-ext,latin-ext');
 @font-face {
   font-family: 'icon font';
   src: url('../fonts/icon-font.eot');
@@ -24,10 +24,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-001-exam:before {
+.icon-aeroplane:before {
   content: '\0041';
 }
-.icon-001-exam:before:before {
+.icon-aeroplane:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -36,22 +36,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-002-like:before {
+.icon-arr-right:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arr-right:before {
   content: '\0042';
 }
-.icon-002-like:before:before {
-  display: inline-block;
-  font-family: 'icon font';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-003-currency:before {
+.icon-bed:before {
   content: '\0043';
 }
-.icon-003-currency:before:before {
+.icon-bed:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -60,10 +60,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-004-coins:before {
+.icon-coins:before {
   content: '\0044';
 }
-.icon-004-coins:before:before {
+.icon-coins:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -72,10 +72,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-005-headphones:before {
+.icon-construction:before {
   content: '\0045';
 }
-.icon-005-headphones:before:before {
+.icon-construction:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -84,10 +84,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-006-bed:before {
+.icon-currency:before {
   content: '\0046';
 }
-.icon-006-bed:before:before {
+.icon-currency:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -96,10 +96,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-007-round-done-button:before {
+.icon-delivery-truck:before {
   content: '\0047';
 }
-.icon-007-round-done-button:before:before {
+.icon-delivery-truck:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -108,10 +108,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-008-instagram:before {
+.icon-devices:before {
   content: '\0048';
 }
-.icon-008-instagram:before:before {
+.icon-devices:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -120,10 +120,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-009-facebook-logo:before {
+.icon-draw:before {
   content: '\0049';
 }
-.icon-009-facebook-logo:before:before {
+.icon-draw:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -132,10 +132,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-010-construction:before {
+.icon-exam:before {
   content: '\004a';
 }
-.icon-010-construction:before:before {
+.icon-exam:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -144,10 +144,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-011-helmet:before {
+.icon-facebook:before {
   content: '\004b';
 }
-.icon-011-helmet:before:before {
+.icon-facebook:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -156,10 +156,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-014-aeroplane:before {
+.icon-facebook-logo:before {
   content: '\004c';
 }
-.icon-014-aeroplane:before:before {
+.icon-facebook-logo:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -168,22 +168,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-015-vip:before {
+.icon-faq-arr:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-faq-arr:before {
   content: '\004d';
 }
-.icon-015-vip:before:before {
-  display: inline-block;
-  font-family: 'icon font';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-017-invitation:before {
+.icon-file:before {
   content: '\004e';
 }
-.icon-017-invitation:before:before {
+.icon-file:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -192,10 +192,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-018-locked:before {
+.icon-google-plus:before {
   content: '\004f';
 }
-.icon-018-locked:before:before {
+.icon-google-plus:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -204,10 +204,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-019-draw:before {
+.icon-headphones:before {
   content: '\0050';
 }
-.icon-019-draw:before:before {
+.icon-headphones:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -216,10 +216,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-020-delivery-truck:before {
+.icon-helmet:before {
   content: '\0051';
 }
-.icon-020-delivery-truck:before:before {
+.icon-helmet:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -228,10 +228,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-021-magician-hat:before {
+.icon-instagram:before {
   content: '\0052';
 }
-.icon-021-magician-hat:before:before {
+.icon-instagram:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -240,10 +240,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-022-file:before {
+.icon-invitation:before {
   content: '\0053';
 }
-.icon-022-file:before:before {
+.icon-invitation:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -252,10 +252,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-023-devices:before {
+.icon-like:before {
   content: '\0054';
 }
-.icon-023-devices:before:before {
+.icon-like:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -264,10 +264,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-024-warning:before {
+.icon-locked:before {
   content: '\0055';
 }
-.icon-024-warning:before:before {
+.icon-locked:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -276,10 +276,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-025-google-plus:before {
+.icon-magician-hat:before {
   content: '\0056';
 }
-.icon-025-google-plus:before:before {
+.icon-magician-hat:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -288,10 +288,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-026-facebook:before {
+.icon-odnoklassniki-logo:before {
   content: '\0057';
 }
-.icon-026-facebook:before:before {
+.icon-odnoklassniki-logo:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -300,10 +300,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-027-odnoklassniki-logo:before {
+.icon-round-done-button:before {
   content: '\0058';
 }
-.icon-027-odnoklassniki-logo:before:before {
+.icon-round-done-button:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -312,10 +312,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-028-vk:before {
+.icon-social:before {
   content: '\0059';
 }
-.icon-028-vk:before:before {
+.icon-social:before:before {
   display: inline-block;
   font-family: 'icon font';
   font-style: normal;
@@ -324,29 +324,53 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-031-social:before {
+.icon-tick:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-tick:before {
   content: '\005a';
 }
-.icon-031-social:before:before {
-  display: inline-block;
-  font-family: 'icon font';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-Vector7:before {
-  display: inline-block;
-  font-family: 'icon font';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-Vector7:before {
+.icon-vip:before {
   content: '\0061';
+}
+.icon-vip:before:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-vk:before {
+  content: '\0062';
+}
+.icon-vk:before:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-warning:before {
+  content: '\0063';
+}
+.icon-warning:before:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .cleara:after {
   content: "";
@@ -372,9 +396,11 @@ a {
   text-decoration: none;
   color: #00b0fe;
   outline: none;
+  transition: all 0.3s ease;
 }
 a:hover {
   text-decoration: none;
+  color: #65d0ff;
 }
 p {
   margin: 0 0 10px;
@@ -416,8 +442,13 @@ img {
 .h2 {
   font-weight: 300;
   font-size: 36px;
-  margin: 0 0 75px;
+  margin: 0 0 55px;
   text-align: center;
+}
+.h3 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0 0 40px;
 }
 .text-title {
   max-width: 80%;
@@ -426,11 +457,21 @@ img {
   color: #828282;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.big-text-title {
+  max-width: 60%;
+  margin: 0 auto;
+  line-height: 1.38;
+  color: #828282;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 55px;
   text-align: center;
 }
 .section {
-  padding: 85px 0 10px;
+  margin: 85px 0;
 }
 .work-list {
   margin-bottom: 60px;
@@ -449,7 +490,7 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 .work-list__item:before {
-  content: '\0061';
+  content: '\0042';
 }
 .work-list__item:before {
   position: absolute;
@@ -457,7 +498,7 @@ img {
   color: #00b0fe;
   top: 26px;
 }
-.work-list > div:last-child .work-list__item:before {
+.work-list .row > div:last-child .work-list__item:before {
   display: none;
 }
 .work-list__icon {
@@ -486,8 +527,10 @@ img {
   border-radius: 5px;
 }
 .country__item {
+  display: block;
   position: relative;
   height: 210px;
+  margin: 0 -15px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -530,7 +573,8 @@ img {
   transition: all 0.3s ease;
 }
 .country__item:hover:after {
-  background: rgba(0, 176, 254, 0.4);
+  background-color: #00b0fe;
+  opacity: .4;
 }
 .icon-list__item {
   display: flex;
@@ -568,6 +612,247 @@ img {
   color: #ffffff;
   background-color: #00b0fe;
   border-color: #00b0fe;
+}
+.faq-accordion {
+  font-size: 18px;
+  color: #000000;
+  margin: 0 0 30px;
+}
+.faq-accordion__item {
+  padding: 0 0 10px;
+}
+.faq-accordion__topline {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #000000;
+  margin: 0 0 20px;
+  padding-left: 38px;
+  transition: all 0.3s ease;
+}
+.faq-accordion__topline:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.faq-accordion__topline:before {
+  content: '\004d';
+}
+.faq-accordion__topline:before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  color: #00b0fe;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.faq-accordion__topline:hover {
+  color: #333333;
+}
+.faq-accordion__panel {
+  font-weight: 300;
+}
+.faq-accordion__panel p {
+  margin: 0;
+}
+.faq-accordion__icon {
+  color: #00b0fe;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.featurette-divider {
+  margin: 0 0 50px;
+}
+.text-divider {
+  margin: 85px 0;
+}
+.services-text {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+.services-nav {
+  display: flex;
+}
+.news {
+  width: 80%;
+  margin: 0 auto;
+}
+.news__item {
+  margin: 0 0 40px;
+  display: flex;
+}
+.news__item:last-child {
+  margin: 0;
+}
+.news__item-left {
+  flex-shrink: 0;
+  width: 170px;
+}
+.news__item-right {
+  flex-grow: 1;
+}
+.news__item-date {
+  color: #4f4f4f;
+  font-size: 24px;
+  font-weight: 300;
+}
+.news__item-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+.news__item-text {
+  color: #828282;
+  font-size: 18px;
+  font-weight: 300;
+}
+.check-list {
+  width: 80%;
+  margin: 0 auto;
+}
+.check-list__item {
+  margin: 0 0 45px;
+  padding-left: 90px;
+  position: relative;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+}
+.check-list__item:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.check-list__item:before {
+  content: '\005a';
+}
+.check-list__item:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: #00b0fe;
+}
+.check-list__item:last-child {
+  margin: 0;
+}
+.prices__item {
+  text-align: center;
+  position: relative;
+}
+.prices__item-title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #828282;
+  margin: 0 0 20px;
+}
+.prices__item:first-child {
+  padding-right: 30px;
+}
+.prices__item:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -15px;
+  background-color: #e0e0e0;
+}
+.prices__item:last-child:after {
+  display: none;
+}
+.prices__list {
+  text-align: right;
+}
+.prices__list-item {
+  margin: 0 0 5px;
+  font-size: 22px;
+  color: #333333;
+  font-weight: 300;
+  font-style: italic;
+}
+.prices__list-item span {
+  font-size: 26px;
+  font-style: normal;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.prices__list-item:last-child {
+  margin: 0;
+}
+.prices .price-text {
+  margin: 50px 0 5px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #333333;
+}
+.prices .price-link {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+}
+.selectize-control.single .selectize-input {
+  border-color: #828282;
+  padding: 13px 55px 15px 25px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 300;
+}
+.selectize-control.single .selectize-input:before {
+  display: inline-block;
+  font-family: 'icon font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.selectize-control.single .selectize-input:before {
+  content: '\004d';
+}
+.selectize-control.single .selectize-input:after {
+  display: none;
+}
+.selectize-control.single .selectize-input:before {
+  position: absolute;
+  top: 16px!important;
+  right: 25px!important;
+  color: #BDBDBD;
+  font-size: 18px;
+  left: auto;
+  height: 16px;
+}
+.selectize-control.single .selectize-input.focus {
+  box-shadow: none;
+}
+.selectize-control.single .selectize-input.dropdown-active:before {
+  transform: rotate(180deg);
+}
+.selectize-dropdown-content .option {
+  padding: 8px 20px;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 300;
+}
+.visa-select {
+  max-width: 460px;
+  margin: 0 auto 30px;
 }
 .footer {
   padding: 48px 0 0;
@@ -637,7 +922,7 @@ img {
   transition: all 0.3s ease;
 }
 .footer-social__item:hover {
-  color: #828282;
+  color: #1c1c1c;
 }
 .footer-social__icon {
   font-size: 32px;
@@ -652,7 +937,7 @@ img {
   display: inline-block;
 }
 .footer-phone:hover {
-  color: #828282;
+  color: #1c1c1c;
 }
 .footer-langs__item {
   margin: 0 0 7px;
