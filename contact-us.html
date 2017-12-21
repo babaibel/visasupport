@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/selectize.bootstrap3.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -40,7 +41,7 @@
 							<a class="nav-link" href="#">FAQ</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contacts</a>
+							<a class="nav-link open-popup-link" href="#login-popup">Contacts</a>
 						</li>
 					</ul>
 					<div class="form-inline mt-2 mt-md-0">
@@ -88,9 +89,8 @@
 			<div class="row">
 				<div class="col">
 					<div class="h2">Contact form</div>
-
 					<div class="contact-form">
-						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<ul class="nav nav-pills contact-nav-pills mb-3" id="pills-tab" role="tablist">
 							<li class="nav-item">
 						    	<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Private</a>
 							</li>
@@ -100,85 +100,88 @@
 						</ul>
 						<div class="tab-content" id="pills-tabContent">
 							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-								<form>
-									<div class="form-group">
-										<label for="inputName1">Your name</label>
-										<input type="name" class="form-control" id="inputName1" aria-describedby="emailHelp" placeholder="Enter email">
-									</div>
-									<div class="form-group">
-										<label for="inputEmail1">Email address</label>
-										<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-									</div>
-									<div class="form-group">
-										<label for="inputCountry1">Country</label>
-										<select id="inputCountry1" class="form-control js-select form-select">
-											<option selected>Choose country</option>
-											<option>M-Visa Commerce and trade</option>
-											<option>Business Visa</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label for="inputSubject1">Subject</label>
-										<select id="inputSubject1" class="form-control js-select form-select">
-											<option selected>Please let us categorise your request</option>
-											<option>M-Visa Commerce and trade</option>
-											<option>Business Visa</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label for="formTextarea1">Question</label>
-										<textarea class="form-control" id="formTextarea1" rows="3"></textarea>
-									</div>
-									<div class="text-center">
-										<button type="submit" class="btn btn-primary btn-lg">Submit</button>
-									</div>
-								</form>
+								<div class="form">
+									<form>
+										<div class="form-group">
+											<label for="inputName1">Your name</label>
+											<input type="name" class="form-control" id="inputName1" aria-describedby="emailHelp" placeholder="Enter email">
+										</div>
+										<div class="form-group">
+											<label for="inputEmail1">Email address</label>
+											<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+										</div>
+										<div class="form-group">
+											<label for="inputCountry1">Country</label>
+											<select id="inputCountry1" class="form-control js-select form-select">
+												<option selected>Choose country</option>
+												<option>M-Visa Commerce and trade</option>
+												<option>Business Visa</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="inputSubject1">Subject</label>
+											<select id="inputSubject1" class="form-control js-select form-select">
+												<option selected>Please let us categorise your request</option>
+												<option>M-Visa Commerce and trade</option>
+												<option>Business Visa</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="formTextarea1">Question</label>
+											<textarea class="form-control" id="formTextarea1" rows="3"></textarea>
+										</div>
+										<div class="text-center">
+											<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+										</div>
+									</form>
+								</div>
 							</div>
 							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-								<form>
-									<div class="form-group">
-										<label for="inputName2">Your name</label>
-										<input type="name" class="form-control" id="inputName2" aria-describedby="emailHelp" placeholder="Enter your name">
-									</div>
-									<div class="form-group">
-										<label for="inputCompany2">Company</label>
-										<input type="name" class="form-control" id="inputCompany2" aria-describedby="emailHelp" placeholder="Enter company name">
-									</div>
-									<div class="form-group">
-										<label for="inputEmail2">Email address</label>
-										<input type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
-									</div>
-									<div class="form-group">
-										<label for="inputPhone2">Phone</label>
-										<input type="email" class="form-control" id="inputPhone2" aria-describedby="emailHelp" placeholder="+49 938 9382 2234">
-									</div>
-									<div class="form-group">
-										<label for="inputCountry2">Country</label>
-										<select id="inputCountry2" class="form-control js-select form-select">
-											<option selected>Choose country</option>
-											<option>M-Visa Commerce and trade</option>
-											<option>Business Visa</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label for="inputSubject2">Subject</label>
-										<select id="inputSubject2" class="form-control js-select form-select">
-											<option selected>Please let us categorise your request</option>
-											<option>M-Visa Commerce and trade</option>
-											<option>Business Visa</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label for="formTextarea2">Question</label>
-										<textarea class="form-control" id="formTextarea2" rows="3"></textarea>
-									</div>
-									<div class="text-center">
-										<button type="submit" class="btn btn-primary btn-lg">Submit</button>
-									</div>
-								</form>
+								<div class="form">
+									<form>
+										<div class="form-group">
+											<label for="inputName2">Your name</label>
+											<input type="name" class="form-control" id="inputName2" aria-describedby="emailHelp" placeholder="Enter your name">
+										</div>
+										<div class="form-group">
+											<label for="inputCompany2">Company</label>
+											<input type="name" class="form-control" id="inputCompany2" aria-describedby="emailHelp" placeholder="Enter company name">
+										</div>
+										<div class="form-group">
+											<label for="inputEmail2">Email address</label>
+											<input type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+										</div>
+										<div class="form-group">
+											<label for="inputPhone2">Phone</label>
+											<input type="email" class="form-control" id="inputPhone2" aria-describedby="emailHelp" placeholder="+49 938 9382 2234">
+										</div>
+										<div class="form-group">
+											<label for="inputCountry2">Country</label>
+											<select id="inputCountry2" class="form-control js-select form-select">
+												<option selected>Choose country</option>
+												<option>M-Visa Commerce and trade</option>
+												<option>Business Visa</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="inputSubject2">Subject</label>
+											<select id="inputSubject2" class="form-control js-select form-select">
+												<option selected>Please let us categorise your request</option>
+												<option>M-Visa Commerce and trade</option>
+												<option>Business Visa</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="formTextarea2">Question</label>
+											<textarea class="form-control" id="formTextarea2" rows="3"></textarea>
+										</div>
+										<div class="text-center">
+											<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -298,10 +301,68 @@
 		</div>
 	</footer>
 
+	<div id="login-popup" class="popup mfp-hide">
+		<div class="popup__body">
+			
+			<div class="popup-form">
+				<ul class="nav nav-pills popup-nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item">
+				    	<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Private</a>
+					</li>
+					<li class="nav-item">
+				    	<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Corporate</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent2">
+					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<p class="popup-title">Login</p>
+						<ul class="popup-social">
+							<li class="popup-social__item"><a href="#"><span class="popup-social__icon icon-facebook"></span></a></li>
+							<li class="popup-social__item"><a href="#"><span class="popup-social__icon icon-google-plus"></span></a></li>
+						</ul>
+						<p class="text-title">or</p>
+						<div class="form">
+							<form>
+								<div class="form-group">
+									<input type="name" class="form-control" id="inputName1" aria-describedby="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary btn-lg">LOGIN</button>
+									<p class="popup-form__tip"><a href="#">Forgot your password?</a></p>
+									<p class="popup-form__tip">Need account? <a href="#">Sign up</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<p class="popup-title">Login</p>
+						<div class="form">
+							<form>
+								<div class="form-group">
+									<input type="name" class="form-control" id="inputName2" aria-describedby="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary btn-lg">LOGIN</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/selectize.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/js.js"></script>
 </body>
 </html>
