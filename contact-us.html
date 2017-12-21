@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Frontend/Services</title>
+	<title>Frontend/Contact us</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/selectize.bootstrap3.css">
@@ -22,7 +22,6 @@
 			
 			<nav class="navbar navbar-expand-md navbar-toggleable-md">
 				<a class="navbar-brand" href="#">
-					<img src="" width="30" height="30" class="d-inline-block align-top" alt="">
 					<img src="img/logo.svg" alt="">
 				</a>
 
@@ -44,10 +43,9 @@
 							<a class="nav-link" href="#">Contacts</a>
 						</li>
 					</ul>
-					<form class="form-inline mt-2 mt-md-0">
-						<input class="form-control mr-sm-2" type="text" placeholder="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					</form>
+					<div class="form-inline mt-2 mt-md-0">
+						<a href="#"><span class="icon-social"></span> Login</a>
+					</div>
 				</div>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,82 +83,125 @@
 		</div>
 	</header>
 
-	<section class="services-nav">
+	<section class="section">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<a class="services-nav__link active" href="#">
-						<span class="link-icon icon-invitation"></span>
-						<span class="link-text">Invitation</span>
-					</a>
-				</div>
-				<div class="col">
-					<a class="services-nav__link" href="#">
-						<span class="link-icon icon-aeroplane"></span>
-						<span class="link-text">Flight</span>
-					</a>
-				</div>
-				<div class="col">
-					<a class="services-nav__link" href="#">
-						<span class="link-icon icon-bed"></span>
-						<span class="link-text">Hotel</span>
-					</a>
-				</div>
-				<div class="col">
-					<a class="services-nav__link" href="#">
-						<span class="link-icon icon-vip"></span>
-						<span class="link-text">VIP</span>
-					</a>
-				</div>
-				<div class="col">
-					<a class="services-nav__link" href="#">
-						<span class="link-icon icon-helmet"></span>
-						<span class="link-text">Work Visa</span>
-					</a>
+					<div class="h2">Contact form</div>
+
+					<div class="contact-form">
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+							<li class="nav-item">
+						    	<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Private</a>
+							</li>
+							<li class="nav-item">
+						    	<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Corporate</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+								<form>
+									<div class="form-group">
+										<label for="inputName1">Your name</label>
+										<input type="name" class="form-control" id="inputName1" aria-describedby="emailHelp" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="inputEmail1">Email address</label>
+										<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="inputCountry1">Country</label>
+										<select id="inputCountry1" class="form-control js-select form-select">
+											<option selected>Choose country</option>
+											<option>M-Visa Commerce and trade</option>
+											<option>Business Visa</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="inputSubject1">Subject</label>
+										<select id="inputSubject1" class="form-control js-select form-select">
+											<option selected>Please let us categorise your request</option>
+											<option>M-Visa Commerce and trade</option>
+											<option>Business Visa</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="formTextarea1">Question</label>
+										<textarea class="form-control" id="formTextarea1" rows="3"></textarea>
+									</div>
+									<div class="text-center">
+										<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+								<form>
+									<div class="form-group">
+										<label for="inputName2">Your name</label>
+										<input type="name" class="form-control" id="inputName2" aria-describedby="emailHelp" placeholder="Enter your name">
+									</div>
+									<div class="form-group">
+										<label for="inputCompany2">Company</label>
+										<input type="name" class="form-control" id="inputCompany2" aria-describedby="emailHelp" placeholder="Enter company name">
+									</div>
+									<div class="form-group">
+										<label for="inputEmail2">Email address</label>
+										<input type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="inputPhone2">Phone</label>
+										<input type="email" class="form-control" id="inputPhone2" aria-describedby="emailHelp" placeholder="+49 938 9382 2234">
+									</div>
+									<div class="form-group">
+										<label for="inputCountry2">Country</label>
+										<select id="inputCountry2" class="form-control js-select form-select">
+											<option selected>Choose country</option>
+											<option>M-Visa Commerce and trade</option>
+											<option>Business Visa</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="inputSubject2">Subject</label>
+										<select id="inputSubject2" class="form-control js-select form-select">
+											<option selected>Please let us categorise your request</option>
+											<option>M-Visa Commerce and trade</option>
+											<option>Business Visa</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="formTextarea2">Question</label>
+										<textarea class="form-control" id="formTextarea2" rows="3"></textarea>
+									</div>
+									<div class="text-center">
+										<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="section">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h2 class="h2">Business Invitation for the Russian Federation</h2>
-
-					<p class="services-text">Additionally to your visa application you need an invitation of your Russian business partner for all business travel to the Russian Federation. Depending on the Federal state the responsible consulates in charge define their own requirements. Furthermore there are special agreements for travelers coming from countries of the European Union.</p>
-					<p class="services-text">Visa Support & Business Solutions GmbH has specialized on the procurement of such invitations. Due to our cooperation partners in the Russian Federation as well as our long-lasting experience with different European consulates our team is well accustomed with all requirements.</p>
-					<p class="services-text">Especially getting these necessary invitations can easily result in delays that may jeopardize the success of your trip.</p>
-
-					<hr class="text-divider">
-
-					<h2 class="h2">Tourist Reference for the Russian Federation</h2>
-
-					<p class="services-text">For a tourist trip to the Russian Federation you need a hotel confirmation, called ‘hotel voucher’. Surcharges apply if your hotel issues the voucher. Alternatively we can arrange the confirmation through our authorized travel agencies.</p>
-					<p class="services-text">Obviously the procurement via Visa Support is more reliable; your German speaking contact person in Germany is always available for you!</p>
-
-					<hr class="text-divider">
-
-					<h2 class="h2">Business Invitation for Kazakhstan</h2>
-
-					<p class="services-text">As for the Russian Federation also for certain business visa for travel to Kazakhstan an invitation of the business partner is mandatory.</p>
-					<p class="services-text">Our team is familiar with the requirements of the consulates and can help you purposefully to realize the essential documents for your visa application.</p>
-
-					<hr class="text-divider">
-
-					<h2 class="h2">Faster Procurement via Online Services</h2>
-
-					<p class="services-text">As for the Russian Federation also for certain business visa for travel to Kazakhstan an invitation of the business partner is mandatory.</p>
-					<p class="services-text">Our team is familiar with the requirements of the consulates and can help you purposefully to realize the essential documents for your visa application.</p>
-
-					<hr class="text-divider">
-
-					<div class="text-center">
-						<h3 class="h3">If you are interested in our additional services, please</h3>
-						<button type="button" class="btn btn-outline-primary">CONTACT US</button>
+	<section class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.948223222357!2d7.153752716115754!3d50.683786079508245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bee46df9364e8d%3A0xcfdf85bd119a7f4e!2zS29ibGVuemVyIFN0ci4gNjEsIDUzMTczIEJvbm4sINCT0LXRgNC80LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1513850862353" width="100%" height="625" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 offset-md-6">
+						<div class="map__info">
+							<p class="map__info-title">Visa Support & Business Solutions GmbH</p>
+							<p class="map__info-text">Koblenzer Strasse 61 D-53173 Bonn</p>
+							<p class="map__info-text">
+								<a href="mailto:info@visa-support.de" class="map__info-email">info@visa-support.de</a>
+							</p>
+							<p class="map__info-text">
+								<a href="tel:+492285388564" class="map__info-phone">+49 228 538-8564</a>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 	</section>
 

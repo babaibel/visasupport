@@ -1,0 +1,113 @@
+.footer{
+	padding: 48px 0 0;
+	background-color: @grey-bg;
+	color: @lgrey;
+	font-size: 14px;
+	margin-bottom: 0;
+	font-weight: 300;
+	p{
+		a{
+			color: @lgrey;
+			text-decoration: underline;
+			&:hover{
+				color: darken(@lgrey, 20%);
+			}
+		}
+	}
+	&__line{
+		margin-bottom: 55px;
+	}
+	&__botline{
+		padding: 20px 0 18px;
+		background-color: rgba(0, 0, 0, 0.08);
+	}
+	.copyright{
+		color: @lblack;
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+	&-title{
+		font-size: 18px;
+		color: @lgrey;
+		margin-bottom: 14px;
+		font-weight: 400;
+	}
+	&-countries{
+		&__item{
+			margin-bottom: 3px;
+		}
+		&__link{
+			line-height: 1.35;
+			font-size: 14px;
+			color: @lgrey;
+			font-weight: 300;
+			&:hover{
+				color: darken(@lgrey, 20%);
+			}
+		}
+	}
+	&-nav{
+		&__item{
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&__link{
+			font-size: 18px;
+			color: @lgrey;
+			margin-bottom: 16px;
+			font-weight: 400;
+			.trn;
+			&:hover{
+				color: darken(@lgrey, 20%);
+			}
+		}
+	}
+	&-social{
+		&__item{
+			display: inline-block;
+			margin-right: 5px;
+			color: @dgrey;
+			.trn;
+			&:hover{
+				color: darken(@dgrey, 20%);
+			}
+		}
+		&__icon{
+			font-size: 32px;
+			line-height: 32px;
+			
+		}
+	}
+	&-phone{
+		color: @dgrey;
+		font-size: 24px;
+		font-weight: 400;
+		.trn;
+		margin-bottom: 5px;
+		display: inline-block;
+		&:hover{
+			color: darken(@dgrey, 20%);
+		}
+	}
+	&-langs{
+		&__item{
+			margin: 0 0 7px;
+			img{
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				margin-right: 10px;
+			}
+			a{
+				font-size: 14px;
+				color: @lgrey;
+				.trn;
+				&:hover{
+					color: darken(@lgrey, 20%);
+				}
+			}
+		}
+	}
+}
