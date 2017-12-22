@@ -21,11 +21,6 @@
 		padding: 20px 0 18px;
 		background-color: rgba(0, 0, 0, 0.08);
 	}
-	.copyright{
-		color: @lblack;
-		font-size: 14px;
-		margin-bottom: 0;
-	}
 	&-title{
 		font-size: 18px;
 		color: @lgrey;
@@ -110,4 +105,53 @@
 			}
 		}
 	}
+	.copyright{
+		color: @lblack;
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 767px){
+	
+	.footer{
+		position: relative;
+		padding-top: 95px;
+		text-align: center;
+		&__line{
+			margin: 0;
+			.row > div{
+				margin: 0 0 35px;
+				position: static;
+			}
+			&:last-child{
+				> .row > div:last-child{
+					margin: 0;
+				}
+			}
+		}
+		&-countries{
+			text-align: left;
+			padding: 0 20px;
+			&__item{
+				margin: 0 0 5px;
+			}
+		}
+		&-title{
+			margin: 0 0 20px;
+		}
+		&-langs{
+			display: block;
+			width: 100%;
+			position: absolute;
+			top: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+			&__item{
+				display: inline-block;
+				margin: 0 20px;
+			}
+		}
+	}
+	
 }

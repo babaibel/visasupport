@@ -1,5 +1,5 @@
-
 $(function() {
+
 	var $mainCarousel = $('.js-main-carousel');
 	if(!$mainCarousel.length) return;
 
@@ -19,10 +19,24 @@ $(function() {
 		$mainCarousel.carousel('next');
 		return false;
 	});
+
 });
+
 $(function() {
+
 	$('.js-select').selectize({
 		create: true,
 		sortField: 'text'
 	});
+
+});
+
+$(function() {
+
+	$('.open-popup-link').magnificPopup({
+		type:'inline',
+		midClick: true,
+		showCloseBtn: false
+	});
+
 });
