@@ -19,66 +19,66 @@
 	
 	<header class="header">
 
-		<div class="container relative">
-			
-			<nav class="navbar navbar-dark navbar-expand-lg navbar-toggleable-lg">
-				<a class="navbar-brand" href="#">
-					<img src="img/logo.svg" alt="">
-				</a>
+		<div class="nav-wr">
+			<div class="container relative">
+				<nav class="navbar navbar-dark navbar-expand-lg navbar-toggleable-lg">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Visa</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Partnership</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">FAQ</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contacts</a>
-						</li>
-						<hr/>
-					</ul>
-					<div class="navbar-right">
-						<a class="btn-group navbar-user" href="#popup-login">
-							<span class="icon-social"></span>
-							<span class="navbar-user__text">Login</span>
-						</a>
-						<div class="btn-group dropdown-lang">
-							<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="img/international-flags/260-united-kingdom.svg" class="dropdown-lang__img" alt="">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Visa</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Partnership</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">FAQ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contacts</a>
+							</li>
+							<hr/>
+						</ul>
+						<div class="navbar-right">
+							<a class="btn-group navbar-user" href="#popup-login">
+								<span class="icon-social"></span>
+								<span class="navbar-user__text">Login</span>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-right">
-								<li>
-									<a href="#!" class="dropdown-lang__item">
-										<span class="dropdown-lang__text">English</span>
-										<img src="img/international-flags/260-united-kingdom.svg" class="dropdown-lang__img" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="#!" class="dropdown-lang__item">
-										<span class="dropdown-lang__text">German</span>
-										<img src="img/international-flags/162-germany.svg" class="dropdown-lang__img" alt="">
-									</a>
-								</li>
-							</ul>
+							<div class="btn-group dropdown-lang">
+								<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="img/international-flags/260-united-kingdom.svg" class="dropdown-lang__img" alt="">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>
+										<a href="#!" class="dropdown-lang__item">
+											<span class="dropdown-lang__text">English</span>
+											<img src="img/international-flags/260-united-kingdom.svg" class="dropdown-lang__img" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#!" class="dropdown-lang__item">
+											<span class="dropdown-lang__text">German</span>
+											<img src="img/international-flags/162-germany.svg" class="dropdown-lang__img" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-
-			</nav>
+				</nav>
+			</div>
 		</div>
-		
+
 		<div class="carousel slide main-carousel js-main-carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active" style="background-image: url(img/stock-photo-202594593.jpg);">
@@ -117,17 +117,21 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
-			<span class="carousel-scroll-btn icon-arr-right"></span>
+			<span class="carousel-scroll-btn icon-arr-right js-scroll-btn"></span>
 			<div class="carousel-alerts">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col">
-							<span class="carousel-alerts__icon icon-warning"></span>
-							<span class="carousel-alerts__text">Closed embassies in December and January</span>
+						<div class="col-sm">
+							<div class="carousel-alerts__item">
+								<span class="carousel-alerts__icon icon-warning"></span>
+								<span class="carousel-alerts__text">Closed embassies in December and January</span>
+							</div>
 						</div>
-						<div class="col">
-							<span class="carousel-alerts__icon icon-warning info"></span>
-							<span class="carousel-alerts__text">Visa on arrival to Belarus</span>
+						<div class="col-sm">
+							<div class="carousel-alerts__item">
+								<span class="carousel-alerts__icon icon-warning info"></span>
+								<span class="carousel-alerts__text">Visa on arrival to Belarus</span>
+							</div>
 						</div>
 					</div>
 				</div>
