@@ -50,7 +50,7 @@
 							<hr/>
 						</ul>
 						<div class="navbar-right">
-							<a class="btn-group navbar-user" href="#popup-login">
+							<a class="btn-group navbar-user js-popup" href="#login-popup">
 								<span class="icon-social"></span>
 								<span class="navbar-user__text">Login</span>
 							</a>
@@ -122,16 +122,16 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-sm">
-							<div class="carousel-alerts__item">
+							<a href="#!" class="carousel-alerts__item">
 								<span class="carousel-alerts__icon icon-warning"></span>
 								<span class="carousel-alerts__text">Closed embassies in December and January</span>
-							</div>
+							</a>
 						</div>
 						<div class="col-sm">
-							<div class="carousel-alerts__item">
+							<a href="#!" class="carousel-alerts__item">
 								<span class="carousel-alerts__icon icon-warning info"></span>
 								<span class="carousel-alerts__text">Visa on arrival to Belarus</span>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -184,16 +184,9 @@
 			<div class="row">
 				<div class="col">
 					<div class="video">
-						<!-- <iframe width="100%" height="353" src="https://www.youtube.com/embed/esD-elCI818?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
-						  <div class="wrapper">
-							  <!-- begin Video Youtube
-							  =========================================================================== -->
-							  <div class="video-youtube video-youtube_overlay">
-							    <div id="video-youtube__content" class="video-youtube__content video-youtube__content_hide-origin-play-btn"></div>
-							    <button type="button" class="video-youtube__new-play-btn"></button>
-							  </div>
-							  <!-- end Video Youtube
-							  =========================================================================== -->
+						<div class="video-youtube video-youtube_overlay js-youtube" data-id="esD-elCI818">
+							<div id="video-youtube__content" class="video-youtube__content video-youtube__content_hide-origin-play-btn"></div>
+								<button type="button" class="video-youtube__new-play-btn icon-yplay"></button>
 							</div>
 						</div>
 					</div>
@@ -523,6 +516,120 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="login-popup" class="popup mfp-hide">
+		<div class="popup__body">
+			<div class="popup-form">
+				<ul class="nav nav-pills popup-nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-popup-item">
+						<a class="nav-popup-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Private</a>
+					</li>
+					<li class="nav-popup-item">
+						<a class="nav-popup-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Corporate</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent2">
+					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<p class="popup-title">Login</p>
+						<ul class="popup-social">
+							<li class="popup-social__item"><a href="#">
+								<span class="popup-social__icon icon-facebook"></span></a>
+							</li>
+							<li class="popup-social__item">
+								<a href="#"><span class="popup-social__icon icon-google-plus"></span></a>
+							</li>
+						</ul>
+						<p class="text-title">or</p>
+						<div class="form">
+							<form>
+								<div class="form-error">
+									The email address or password you entered is incorrect
+								</div>
+								<div class="form-group">
+									<input type="name" class="form-control error" aria-describedby="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password">
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary btn-lg">LOGIN</button>
+									<p class="popup-form__tip"><a href="#">Forgot your password?</a></p>
+									<p class="popup-form__tip">Need account? <a href="#signup-popup" class="js-popup">Sign up</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<p class="popup-title">Login</p>
+						<ul class="popup-social">
+							<li class="popup-social__item"><a href="#">
+								<span class="popup-social__icon icon-facebook"></span></a>
+							</li>
+							<li class="popup-social__item">
+								<a href="#"><span class="popup-social__icon icon-google-plus"></span></a>
+							</li>
+						</ul>
+						<p class="text-title">or</p>
+						<div class="form">
+							<form>
+								<div class="form-group">
+									<input type="name" class="form-control " aria-describedby="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password">
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary btn-lg">LOGIN</button>
+									<p class="popup-form__tip"><a href="#">Forgot your password?</a></p>
+									<p class="popup-form__tip">Need account? <a href="#signup-popup" class="js-popup">Sign up</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="signup-popup" class="popup mfp-hide">
+		<div class="popup__body">
+			<div class="popup-form">
+				<p class="popup-title">Sign up</p>
+				<ul class="popup-social">
+					<li class="popup-social__item"><a href="#">
+						<span class="popup-social__icon icon-facebook"></span></a>
+					</li>
+					<li class="popup-social__item">
+						<a href="#"><span class="popup-social__icon icon-google-plus"></span></a>
+					</li>
+				</ul>
+				<p class="text-title">or</p>
+				<div class="form">
+					<form>
+						<div class="form-error">
+							The email address or password you entered is incorrect
+						</div>
+						<div class="form-group">
+							<input type="name" class="form-control error" aria-describedby="emailHelp" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="name" class="form-control error" aria-describedby="emailHelp" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Choose password">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Repeat password">
+						</div>
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary btn-lg">SIGNUP</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

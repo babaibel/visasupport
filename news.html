@@ -16,72 +16,100 @@
 	<![endif]-->
 </head>
 <body>
-	
+
 	<header class="header">
 
-		<div class="container relative">
-			
-			<nav class="navbar navbar-expand-md navbar-toggleable-md">
-				<a class="navbar-brand" href="#">
-					<img src="" width="30" height="30" class="d-inline-block align-top" alt="">
-					<img src="img/logo.svg" alt="">
-				</a>
+		<div class="nav-wr">
+			<div class="container relative">
+				<nav class="navbar navbar-dark navbar-expand-lg navbar-toggleable-lg">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Visa <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Partnership</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">FAQ</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contacts</a>
-						</li>
-					</ul>
-					<form class="form-inline mt-2 mt-md-0">
-						<input class="form-control mr-sm-2" type="text" placeholder="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					</form>
-				</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			</nav>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Visa</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Partnership</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">FAQ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contacts</a>
+							</li>
+							<hr/>
+						</ul>
+						<div class="navbar-right">
+							<a class="btn-group navbar-user js-popup" href="#login-popup">
+								<span class="icon-social"></span>
+								<span class="navbar-user__text">Login</span>
+							</a>
+							<div class="btn-group dropdown-lang">
+								<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="img/international-flags/260-united-kingdom.svg" class="dropdown-lang__img" alt="">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>
+										<a href="#!" class="dropdown-lang__item">
+											<span class="dropdown-lang__text">English</span>
+											<img src="img/international-flags/260-united-kingdom.svg" class="dropdown-lang__img" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#!" class="dropdown-lang__item">
+											<span class="dropdown-lang__text">German</span>
+											<img src="img/international-flags/162-germany.svg" class="dropdown-lang__img" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
 		</div>
-		
-		<div class="carousel slide main-carousel js-main-carousel">
+
+		<div class="carousel slide main-carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active" style="background-image: url(img/stock-photo-202594593.jpg);">
 					<div class="container">
-		              <div class="carousel-caption text-center d-block">
-		                <h1>Partnership</h1>
-		                <p>Become our partner</p>
-		              </div>
-		            </div>					
-				</div>
-				<div class="carousel-item" style="background-image: url(img/stock-photo-202594593.jpg);">
-			
-				</div>
-				<div class="carousel-item" style="background-image: url(img/stock-photo-202594593.jpg);"">
-					
+						<div class="carousel-caption text-center d-block">
+							<h1 class="h1 h1--xl">CHINA</h1>
+							<h2 class="h2">Your Business Travel Agency</h2>
+							<p><a class="btn btn-lg btn-primary" href="#" role="button">APPLY ONLINE</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<a class="carousel-control-prev js-main-carousel-arr-prev" href="#mainCarouselControls" role="button">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next js-main-carousel-arr-next" href="#mainCarouselControls" role="button">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+			<span class="carousel-scroll-btn icon-arr-right js-scroll-btn"></span>
+			<div class="carousel-alerts">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-sm">
+							<a href="#!" class="carousel-alerts__item">
+								<span class="carousel-alerts__icon icon-warning"></span>
+								<span class="carousel-alerts__text">Closed embassies in December and January</span>
+							</a>
+						</div>
+						<div class="col-sm">
+							<a href="#!" class="carousel-alerts__item">
+								<span class="carousel-alerts__icon icon-warning info"></span>
+								<span class="carousel-alerts__text">Visa on arrival to Belarus</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
@@ -229,6 +257,120 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="login-popup" class="popup mfp-hide">
+		<div class="popup__body">
+			<div class="popup-form">
+				<ul class="nav nav-pills popup-nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-popup-item">
+						<a class="nav-popup-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Private</a>
+					</li>
+					<li class="nav-popup-item">
+						<a class="nav-popup-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Corporate</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent2">
+					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<p class="popup-title">Login</p>
+						<ul class="popup-social">
+							<li class="popup-social__item"><a href="#">
+								<span class="popup-social__icon icon-facebook"></span></a>
+							</li>
+							<li class="popup-social__item">
+								<a href="#"><span class="popup-social__icon icon-google-plus"></span></a>
+							</li>
+						</ul>
+						<p class="text-title">or</p>
+						<div class="form">
+							<form>
+								<div class="form-error">
+									The email address or password you entered is incorrect
+								</div>
+								<div class="form-group">
+									<input type="name" class="form-control error" aria-describedby="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password">
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary btn-lg">LOGIN</button>
+									<p class="popup-form__tip"><a href="#">Forgot your password?</a></p>
+									<p class="popup-form__tip">Need account? <a href="#signup-popup" class="js-popup">Sign up</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<p class="popup-title">Login</p>
+						<ul class="popup-social">
+							<li class="popup-social__item"><a href="#">
+								<span class="popup-social__icon icon-facebook"></span></a>
+							</li>
+							<li class="popup-social__item">
+								<a href="#"><span class="popup-social__icon icon-google-plus"></span></a>
+							</li>
+						</ul>
+						<p class="text-title">or</p>
+						<div class="form">
+							<form>
+								<div class="form-group">
+									<input type="name" class="form-control " aria-describedby="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password">
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary btn-lg">LOGIN</button>
+									<p class="popup-form__tip"><a href="#">Forgot your password?</a></p>
+									<p class="popup-form__tip">Need account? <a href="#signup-popup" class="js-popup">Sign up</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="signup-popup" class="popup mfp-hide">
+		<div class="popup__body">
+			<div class="popup-form">
+				<p class="popup-title">Sign up</p>
+				<ul class="popup-social">
+					<li class="popup-social__item"><a href="#">
+						<span class="popup-social__icon icon-facebook"></span></a>
+					</li>
+					<li class="popup-social__item">
+						<a href="#"><span class="popup-social__icon icon-google-plus"></span></a>
+					</li>
+				</ul>
+				<p class="text-title">or</p>
+				<div class="form">
+					<form>
+						<div class="form-error">
+							The email address or password you entered is incorrect
+						</div>
+						<div class="form-group">
+							<input type="name" class="form-control error" aria-describedby="emailHelp" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="name" class="form-control error" aria-describedby="emailHelp" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Choose password">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Repeat password">
+						</div>
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary btn-lg">SIGNUP</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
