@@ -1,3 +1,12 @@
+
+var font = new FontFaceObserver('icon font', {
+  weight: 400
+});
+
+font.load(null, 60000).then(function () {
+	$('body').addClass("_icons-loaded");
+});
+
 $(function() {
 
 	var $mainCarousel = $('.js-main-carousel');
