@@ -11,9 +11,11 @@
 		line-height: 1.38;
 	}
 	.btn-primary{
-		padding-left: 30px;
-		padding-right: 30px;
+		padding: 10px 30px;
 		font-size: 18px;
+		&:focus{
+			border-color: @lblue;
+		}
 	}
 	&-item{
 		height: 700px;
@@ -37,6 +39,10 @@
 	}
 	&-caption{
 		bottom: 180px;
+		&--inner{
+			bottom: 50%;
+   			transform: translateY(50%);
+		}
 	}
 	&-scroll-btn{
 		width: 48px;
@@ -126,7 +132,7 @@
 			width: 20%;
 			height: 1px;
 			transition: .3s ease-in-out;
-			background: #fff;
+			background: @lblue;
 		}
 	}
 	&-right{
@@ -277,21 +283,28 @@
 	.navbar-nav{
 		max-width: auto;
 		display: block;
+
 	}
 	.navbar-collapse{
-		background: rgba(0, 0, 0, 0.7);
-		border-radius: .25rem;
-		margin-top: 5px;
-		padding: 10px;
+		background: rgba(0, 0, 0, 0.85);
+		border-radius: 0;
+		padding: 10px 15px;
 		text-align: center;
+		margin: 10px -15px 0;
 	}
 	.nav-item{
 		.nav-link{
-			display: inline-block;
+			text-align: left;
+			display: block;
+			padding-left: 0!important;
+			padding-right: 0!important;
+			font-weight: 300;
 			&:after{
-				height: 1px;
-				bottom: 4px;
+				display: none!important;
 			}
+		}
+		&.active>.nav-link{
+			font-weight: 600!important;
 		}
 	}
 	.navbar-right{
@@ -301,12 +314,9 @@
 }
 
 @media screen and (max-width: 767px){
-	.carousel-item{
-		height: 500px;
-	}
 	.carousel .h2{
-		font-size: 20px;
-		margin-bottom: 20px;
+		font-size: 18px;
+		margin-bottom: 60px;
 	}
 	.carousel-control-next-icon,
 	.carousel-control-prev-icon{
@@ -319,10 +329,11 @@
 		padding-right: 20px;
 	}
 	.carousel-caption{
-		bottom: 120px;
+		bottom: 50%;
+		transform: translateY(50%);
 	}
 	.carousel-scroll-btn{
-		bottom: 80px;
+		bottom: 100px;
 	}
 	.carousel-alerts{
 		&__text{
