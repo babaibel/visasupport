@@ -22,6 +22,13 @@ $(function() {
 
 });
 
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
+	$('.datepicker').datepicker({
+		language: 'ru'
+	});
+})
+
 $(function() {
 
 	var $select = $('.js-select');
