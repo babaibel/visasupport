@@ -102,6 +102,13 @@ img{
 	margin: 0 0 40px;
 }
 
+.h4{
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 0;
+}
+
 .text-title{
 	max-width: 730px;
 	margin: 0 auto;
@@ -822,6 +829,30 @@ img{
 	}
 }
 
+.btn-blue-icon{
+	display: inline-flex;
+	align-items: center;
+	padding: 15px 35px;
+	border-radius: 10px;
+	border: 1px solid @lblue;
+	color: @black;
+	&:hover{
+		color: @lblue;
+	}
+	&__icon{
+		color: @lblue;
+		font-size: 49px;
+		line-height: 0;
+		padding-right: 30px;
+		position: relative;
+		top: 2px;
+	}
+	&__text{
+		font-size: 24px;
+		font-weight: 400;
+	}
+}
+
 .map{
 	position: relative;
 	&-container{
@@ -978,6 +1009,84 @@ img{
 				&:hover{
 					border-bottom-color: lighten(@lblue, 20%);
 				}
+			}
+		}
+	}
+	&-upload{
+		margin: 20px 0 60px;
+	}
+	&-example{
+		text-align: center;
+		img{
+			max-width: 100%;
+		}
+	}
+	&-hr{
+		position: relative;
+		text-align: center;
+		margin: 40px 0;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			height: 1px;
+			background: #BDBDBD;
+		}
+		span{
+			position: relative;
+			z-index: 2;
+			padding: 0 30px;
+			display: inline-block;
+			background: #fff;
+		}
+	}
+	&-close{
+		display: inline-block;
+		line-height: 0;
+		font-size: 52px;
+		color: #fff;
+		cursor: pointer;
+		.trn;
+		&:hover{
+			opacity: 0.9;
+		}
+	}
+	&--questionnaire{
+		max-width: 990px;
+		.popup__body{
+			background-color: @white;
+			padding: 35px 55px 40px;
+			border-radius: 10px;
+			box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+			.h3{
+				margin: 10px 0;
+				color: #000;
+				font-weight: 400;
+			}
+			.small-text{
+				font-size: 14px;
+				line-height: 1.6;
+			}
+		}
+		.popup__header{
+			background-color: @lblue;
+			padding: 23px 85px 27px 10px;
+			border-radius: 10px 10px 0 0;
+			position: relative;
+			.popup-close{
+				position: absolute;
+				right: 25px;
+				top: 50%;
+				margin-top: -26px;
+			}
+			.popup-title{
+				margin-bottom: 0;
+				color: #fff;
+			}
+			& + .popup__body{
+				border-radius: 0 0 10px 10px;
 			}
 		}
 	}
@@ -1323,6 +1432,51 @@ img{
 	color: #6AC259;
 }
 
+.document{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 180px;
+	margin: 25px 10px;
+	padding: 0 20px;
+	border: 1px solid #828282;
+	border-radius: 10px;
+	text-align: center;
+	&__icon{
+		display: none;
+		font-size: 26px;
+		line-height: 0;
+		margin-bottom: 10px;
+	}
+	&__help{
+		font-style: italic;
+		color: @green;
+		margin-top: 15px;
+		font-weight: 300;
+	}
+	.h3,
+	.h4{
+		display: block;
+		color: @lblack;
+		margin-bottom: 0;
+	}
+	&:hover{
+		background: lighten(@lblue,40%);
+		color: #fff;
+	}
+	&--ready{
+		background: @lblue!important;
+		color: #fff;
+		border-color: @lblue; 
+		.h3{
+			font-weight: 400;
+			color: #fff;
+		}
+		.document__icon{
+			display: block;
+		}
+	}
+}
 
 @media screen and (max-width: 991px){
 	.breadcrumbs__item{
@@ -1557,6 +1711,31 @@ img{
 		margin: 35px 0;
 		&:first-child{
 			margin: 0 0 35px;
+		}
+	}
+	.popup--questionnaire{
+		.popup__header{
+			padding: 13px 55px 16px 10px;
+			.popup-title{
+				font-size: 24px;
+			}
+			.popup-close{
+				font-size: 32px;
+				margin-top: -16px;
+				right: 15px;
+			}
+		}
+		.popup__body{
+			padding: 25px 15px 30px;
+		}
+	}
+	.popup-upload{
+		margin: 20px 0 30px;
+	}
+	.btn-blue-icon{
+		padding: 10px 25px;
+		&__text{
+			font-size: 20px;
 		}
 	}
 }

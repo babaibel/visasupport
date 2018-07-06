@@ -60,6 +60,10 @@ $(function() {
 		showCloseBtn: false
 	});
 
+	$('.js-popup-close').on('click',function(){
+		$.magnificPopup.close();
+	});
+
 });
 
 $(function() {

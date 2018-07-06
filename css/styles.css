@@ -1112,6 +1112,12 @@ img {
   font-size: 24px;
   margin: 0 0 40px;
 }
+.h4 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+}
 .text-title {
   max-width: 730px;
   margin: 0 auto;
@@ -1817,6 +1823,29 @@ img {
 .btn-clear:hover {
   background-color: #ececec;
 }
+.btn-blue-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid #00b0fe;
+  color: #000000;
+}
+.btn-blue-icon:hover {
+  color: #00b0fe;
+}
+.btn-blue-icon__icon {
+  color: #00b0fe;
+  font-size: 49px;
+  line-height: 0;
+  padding-right: 30px;
+  position: relative;
+  top: 2px;
+}
+.btn-blue-icon__text {
+  font-size: 24px;
+  font-weight: 400;
+}
 .map {
   position: relative;
 }
@@ -1971,6 +2000,84 @@ img {
 }
 .popup-form__tip a:hover {
   border-bottom-color: #65d0ff;
+}
+.popup-upload {
+  margin: 20px 0 60px;
+}
+.popup-example {
+  text-align: center;
+}
+.popup-example img {
+  max-width: 100%;
+}
+.popup-hr {
+  position: relative;
+  text-align: center;
+  margin: 40px 0;
+}
+.popup-hr:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #BDBDBD;
+}
+.popup-hr span {
+  position: relative;
+  z-index: 2;
+  padding: 0 30px;
+  display: inline-block;
+  background: #fff;
+}
+.popup-close {
+  display: inline-block;
+  line-height: 0;
+  font-size: 52px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.popup-close:hover {
+  opacity: 0.9;
+}
+.popup--questionnaire {
+  max-width: 990px;
+}
+.popup--questionnaire .popup__body {
+  background-color: #ffffff;
+  padding: 35px 55px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+.popup--questionnaire .popup__body .h3 {
+  margin: 10px 0;
+  color: #000;
+  font-weight: 400;
+}
+.popup--questionnaire .popup__body .small-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.popup--questionnaire .popup__header {
+  background-color: #00b0fe;
+  padding: 23px 85px 27px 10px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+.popup--questionnaire .popup__header .popup-close {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  margin-top: -26px;
+}
+.popup--questionnaire .popup__header .popup-title {
+  margin-bottom: 0;
+  color: #fff;
+}
+.popup--questionnaire .popup__header + .popup__body {
+  border-radius: 0 0 10px 10px;
 }
 .mfp-bg {
   background: rgba(0, 0, 0, 0.47);
@@ -2279,6 +2386,51 @@ img {
   line-height: 0;
   color: #6AC259;
 }
+.document {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+  margin: 25px 10px;
+  padding: 0 20px;
+  border: 1px solid #828282;
+  border-radius: 10px;
+  text-align: center;
+}
+.document__icon {
+  display: none;
+  font-size: 26px;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+.document__help {
+  font-style: italic;
+  color: #00ba97;
+  margin-top: 15px;
+  font-weight: 300;
+}
+.document .h3,
+.document .h4 {
+  display: block;
+  color: #333333;
+  margin-bottom: 0;
+}
+.document:hover {
+  background: #cbefff;
+  color: #fff;
+}
+.document--ready {
+  background: #00b0fe !important;
+  color: #fff;
+  border-color: #00b0fe;
+}
+.document--ready .h3 {
+  font-weight: 400;
+  color: #fff;
+}
+.document--ready .document__icon {
+  display: block;
+}
 @media screen and (max-width: 991px) {
   .breadcrumbs__item:first-child .breadcrumbs__link {
     padding-left: 20px;
@@ -2474,6 +2626,29 @@ img {
   }
   .step-block:first-child {
     margin: 0 0 35px;
+  }
+  .popup--questionnaire .popup__header {
+    padding: 13px 55px 16px 10px;
+  }
+  .popup--questionnaire .popup__header .popup-title {
+    font-size: 24px;
+  }
+  .popup--questionnaire .popup__header .popup-close {
+    font-size: 32px;
+    margin-top: -16px;
+    right: 15px;
+  }
+  .popup--questionnaire .popup__body {
+    padding: 25px 15px 30px;
+  }
+  .popup-upload {
+    margin: 20px 0 30px;
+  }
+  .btn-blue-icon {
+    padding: 10px 25px;
+  }
+  .btn-blue-icon__text {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 575px) {
