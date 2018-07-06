@@ -95,22 +95,22 @@
 
 	<section class="breadcrumbs-wr">
 		<ul class="breadcrumbs">
-			<li class="breadcrumbs__item col _active">
-				<span class="breadcrumbs__link">
+			<li class="breadcrumbs__item col">
+				<a class="breadcrumbs__link" href="#!">
 					1<i>. Personal data</i>
-				</span>
+				</a>
 			</li>
 			<li class="breadcrumbs__item col">
-				<span class="breadcrumbs__link">
+				<a class="breadcrumbs__link" href="#!">
 					2<i>. Your trip</i>
-				</span>
+				</a>
 			</li>
-			<li class="breadcrumbs__item col">
-				<span class="breadcrumbs__link">
+			<li class="breadcrumbs__item col _prev">
+				<a class="breadcrumbs__link" href="#!">
 					3<i>. Documents</i>
-				</span>
+				</a>
 			</li>
-			<li class="breadcrumbs__item col">
+			<li class="breadcrumbs__item col _active">
 				<span class="breadcrumbs__link">
 					4<i>. Delivery</i>
 				</span>
@@ -127,109 +127,42 @@
 		<div class="container">
 			<form>
 				<div class="row">
-					<div class="col-md-10 offset-md-1">
-						<h3 class="h3 text-center">Ответьте на несколько вопросов анкеты, чтобы получить точнйы список необходимых документов для оформления визы</h3>
+					<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+						<h3 class="h3 text-center">Укажите вариант доставки готовых документов </h3>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-10 offset-md-1">
-								<div class="form">
-									<div class="form-group">
-										<label for="inputName1">
-											Имя Заявителя
-											<span class="tooltip-wr" tabindex="0" data-toggle="tooltip" title="Текст подсказки">?</span>
-										</label>
-										<input type="name" class="form-control" id="inputName1" aria-describedby="emailHelp" placeholder="Иван">
-									</div>
-									<div class="form-group error">
-										<label for="inputEmail1">
-											Фамилия заявителя
-											<span class="tooltip-wr" tabindex="0" data-toggle="tooltip" title="Текст подсказки">?</span>
-										</label>
-										<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-									</div>
-									<div class="form-group error">
-										<label for="inputDate">
-											Дата рождения
-										</label>
-										<div class="input-group date date-input">
-											<input type="text" class="form-control datepicker" id="inputDate" placeholder="MM / DD / YYYY">
-											<div class="input-group-addon">
-												<span class="icon-yyycalendar"></span>
-											</div>
-										</div>
-									</div>
-									<div class="form-group error">
-										<div class="form__row">
-											Пол
-										</div>
-										<div class="input-group radio-group">
-											<label class="radio">
-												<input class="radio__input" type="radio" name="sex">
-												<span class="radio__bg"></span>
-												<span class="radio__text">Мужской</span>
-											</label>
-											<label class="radio">
-												<input class="radio__input" type="radio" name="sex">
-												<span class="radio__bg"></span>
-												<span class="radio__text">Женский</span>
-											</label>
-										</div>
-									</div>
-								</div>
+					<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+						<div class="form">
+							<div class="form-group">
+								<label for="inputVisa1">Способ доставки</label>
+								<select id="inputVisa1" class="form-control js-select form-select">
+									<option selected>Курьерская служба, на следующий день (+15€)</option>
+									<option>Курьерская служба, через день (+5€)</option>
+									<option>Курьерская служба, через неделю</option>
+								</select>
 							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-10 offset-md-1">
-								<div class="form">
-									<div class="form-group error">
-										<label for="inputCountry1">Гражданство</label>
-										<select id="inputCountry1" class="form-control js-select form-select">
-											<option selected>Германия</option>
-											<option>Италия</option>
-											<option>Испания</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<div class="form__row">
-											Я являюсь выходцем из СССР
-										</div>
-										<div class="input-group radio-group">
-											<label class="radio">
-												<input class="radio__input" type="radio" name="sssr">
-												<span class="radio__bg"></span>
-												<span class="radio__text">Да</span>
-											</label>
-											<label class="radio">
-												<input class="radio__input" type="radio" name="sssr" checked>
-												<span class="radio__bg"></span>
-												<span class="radio__text">Нет</span>
-											</label>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="inputCat">
-											Категория визы
-											<span class="tooltip-wr" tabindex="0" data-toggle="tooltip" title="Текст подсказки">?</span>
-										</label>
-										<select id="inputCat" class="form-control js-select form-select">
-											<option selected>Деловая</option>
-											<option>Частная</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label for="inputCat">
-											Цель поездки
-											<span class="tooltip-wr" tabindex="0" data-toggle="tooltip" title="Текст подсказки">?</span>
-										</label>
-										<select id="inputCat" class="form-control js-select form-select">
-											<option selected>Деловая</option>
-											<option>Частная</option>
-										</select>
+							<div class="form-group">
+								<label for="adress">
+									Адрес доставки
+								</label>
+								<textarea class="form-control" id="adress" placeholder="Москва, ул. Фучика, 25, кв 23" rows="4"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="inputVisa2">Срочность</label>
+								<select id="inputVisa2" class="form-control js-select form-select">
+									<option selected>Экспресс, 3 дня (+15€)</option>
+									<option>Обычная, 7 дней</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="inputDate">
+									Крайний срок возврата документов
+								</label>
+								<div class="input-group date date-input">
+									<input type="text" class="form-control datepicker" id="inputDate" placeholder="MM / DD / YYYY">
+									<div class="input-group-addon">
+										<span class="icon-yyycalendar"></span>
 									</div>
 								</div>
 							</div>
