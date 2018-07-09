@@ -24,6 +24,7 @@
 @dgrey: #4F4F4F;
 @red: #EB5757;
 @green: #00BA97;
+@lgreen: #6FCF97;
 
 /* general style*/
 
@@ -829,15 +830,27 @@ img{
 	}
 }
 
-.btn-blue-icon{
+.btn-big-icon{
 	display: inline-flex;
 	align-items: center;
-	padding: 15px 35px;
+	padding: 15px 30px;
 	border-radius: 10px;
 	border: 1px solid @lblue;
 	color: @black;
 	&:hover{
 		color: @lblue;
+	}
+	&--green{
+		border: none;
+		background: @lgreen;
+		color: #fff;
+		&:hover{
+			background: lighten(@lgreen,5%);
+			color: #fff;
+		}
+		.btn-big-icon__icon{
+			color: #fff;
+		}
 	}
 	&__icon{
 		color: @lblue;
@@ -846,10 +859,17 @@ img{
 		padding-right: 30px;
 		position: relative;
 		top: 2px;
+		._active &{
+			color: #fff;
+		}
 	}
 	&__text{
 		font-size: 24px;
 		font-weight: 400;
+	}
+	&._active{
+		background: @lblue;
+		color: #fff;
 	}
 }
 
@@ -950,7 +970,7 @@ img{
 	}
 	&#signup-popup .popup__body{
 		background-color: @white;
-		padding: 35px 55px 40px;
+		padding: 35px 50px 40px;
 		border-radius: 10px;
 		box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 	}
@@ -1014,6 +1034,29 @@ img{
 	}
 	&-upload{
 		margin: 20px 0 60px;
+		&__or{
+			padding: 0 25px;
+			font-size: 24px;
+		}
+		&--or{
+			display: flex;
+			align-items: center;
+		}
+		&-subtitle{
+			font-size: 24px;
+			line-height: 1.4;
+			font-weight: 300;
+			margin-bottom: 30px;
+			span{
+				margin-left: 15px;
+			}
+		}
+		&-btns{
+			margin-bottom: 70px;
+			.form{
+				display: inline-block;
+			}
+		}
 	}
 	&-example{
 		text-align: center;
@@ -1060,6 +1103,9 @@ img{
 			padding: 35px 55px 40px;
 			border-radius: 10px;
 			box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+			.container{
+				max-width: none!important;
+			}
 			.h3{
 				margin: 10px 0;
 				color: #000;
@@ -1253,6 +1299,9 @@ img{
 		opacity: 0;
 		&:checked + .radio__bg{
 			background: @lblue;
+			.radio--green &{
+				background: @lgreen;
+			}
 			& + .radio__text{
 				color: #fff;
 			}
@@ -1325,6 +1374,9 @@ img{
 		margin-left: 50px;
 		top: 50%;
 		transform: translateY(-50%);
+	}
+	&--ib{
+		display: inline-block;
 	}
 }
 
@@ -1493,6 +1545,10 @@ img{
 	}
 	.breadcrumbs__link{
 		padding-left: 30px;
+	}
+
+	.popup--questionnaire .popup__body{
+		padding: 25px 35px 30px;
 	}
 }
 
@@ -1695,6 +1751,9 @@ img{
 	}
 	.btn-right{
 		padding-right: 60px;
+		.popup-upload &{
+			padding-right: 50px;
+		}
 		&__btn{
 			margin-left: 0;
 			left: auto;
@@ -1726,17 +1785,31 @@ img{
 			}
 		}
 		.popup__body{
-			padding: 25px 15px 30px;
+			padding: 25px 10px 30px;
 		}
 	}
 	.popup-upload{
 		margin: 20px 0 30px;
 	}
-	.btn-blue-icon{
+	.btn-big-icon{
 		padding: 10px 25px;
 		&__text{
 			font-size: 20px;
 		}
+		&__icon{
+			font-size: 36px;
+			padding-right: 20px;
+		}
+	}
+	.popup-upload--or{
+		display: block;
+		.popup-upload__or{
+			display: block;
+			margin: 15px 0;
+		}
+	}
+	.popup-upload-btns{
+		margin-bottom: 40px;
 	}
 }
 

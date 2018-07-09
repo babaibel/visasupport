@@ -42,6 +42,37 @@ $(function() {
 });
 
 $(function() {
+
+	var $selectPrice = $('.js-select-price');
+	if(!$selectPrice.length) return;
+
+	$selectPrice.selectize({
+		create: true,
+		sortField: 'text',
+		onInitialize: function () {
+			var s = this;
+			this.revertSettings.$children.each(function () {
+				$.extend(s.options[this.value], $(this).data());
+			});
+		},
+		render: {
+			option: function (item, escape) {
+				return '<div>' + item.html + '</div>';
+			},
+			item: function (item, escape) {
+				if (!item.html) {
+					$.extend(item,
+					$(this.revertSettings.$children)
+						.filter('[value=' + item.value + ']').data()
+					);
+				}
+				return '<div class="item">' + item.html + '</div>';
+			}
+		}
+	});
+});
+
+$(function() {
 	var $scrollBtn = $('.js-scroll-btn');
 	if(!$scrollBtn.length) return;
 

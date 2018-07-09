@@ -1823,18 +1823,30 @@ img {
 .btn-clear:hover {
   background-color: #ececec;
 }
-.btn-blue-icon {
+.btn-big-icon {
   display: inline-flex;
   align-items: center;
-  padding: 15px 35px;
+  padding: 15px 30px;
   border-radius: 10px;
   border: 1px solid #00b0fe;
   color: #000000;
 }
-.btn-blue-icon:hover {
+.btn-big-icon:hover {
   color: #00b0fe;
 }
-.btn-blue-icon__icon {
+.btn-big-icon--green {
+  border: none;
+  background: #6fcf97;
+  color: #fff;
+}
+.btn-big-icon--green:hover {
+  background: #82d5a5;
+  color: #fff;
+}
+.btn-big-icon--green .btn-big-icon__icon {
+  color: #fff;
+}
+.btn-big-icon__icon {
   color: #00b0fe;
   font-size: 49px;
   line-height: 0;
@@ -1842,9 +1854,16 @@ img {
   position: relative;
   top: 2px;
 }
-.btn-blue-icon__text {
+._active .btn-big-icon__icon {
+  color: #fff;
+}
+.btn-big-icon__text {
   font-size: 24px;
   font-weight: 400;
+}
+.btn-big-icon._active {
+  background: #00b0fe;
+  color: #fff;
 }
 .map {
   position: relative;
@@ -1943,7 +1962,7 @@ img {
 }
 .popup#signup-popup .popup__body {
   background-color: #ffffff;
-  padding: 35px 55px 40px;
+  padding: 35px 50px 40px;
   border-radius: 10px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 }
@@ -2004,6 +2023,29 @@ img {
 .popup-upload {
   margin: 20px 0 60px;
 }
+.popup-upload__or {
+  padding: 0 25px;
+  font-size: 24px;
+}
+.popup-upload--or {
+  display: flex;
+  align-items: center;
+}
+.popup-upload-subtitle {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.popup-upload-subtitle span {
+  margin-left: 15px;
+}
+.popup-upload-btns {
+  margin-bottom: 70px;
+}
+.popup-upload-btns .form {
+  display: inline-block;
+}
 .popup-example {
   text-align: center;
 }
@@ -2050,6 +2092,9 @@ img {
   padding: 35px 55px 40px;
   border-radius: 10px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+.popup--questionnaire .popup__body .container {
+  max-width: none!important;
 }
 .popup--questionnaire .popup__body .h3 {
   margin: 10px 0;
@@ -2228,6 +2273,9 @@ img {
 .radio__input:checked + .radio__bg {
   background: #00b0fe;
 }
+.radio--green .radio__input:checked + .radio__bg {
+  background: #6fcf97;
+}
 .radio__input:checked + .radio__bg + .radio__text {
   color: #fff;
 }
@@ -2292,6 +2340,9 @@ img {
   margin-left: 50px;
   top: 50%;
   transform: translateY(-50%);
+}
+.btn-right--ib {
+  display: inline-block;
 }
 .btn-with-icon {
   display: inline-flex;
@@ -2442,6 +2493,9 @@ img {
   }
   .breadcrumbs__link {
     padding-left: 30px;
+  }
+  .popup--questionnaire .popup__body {
+    padding: 25px 35px 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2610,6 +2664,9 @@ img {
   .btn-right {
     padding-right: 60px;
   }
+  .popup-upload .btn-right {
+    padding-right: 50px;
+  }
   .btn-right__btn {
     margin-left: 0;
     left: auto;
@@ -2639,16 +2696,30 @@ img {
     right: 15px;
   }
   .popup--questionnaire .popup__body {
-    padding: 25px 15px 30px;
+    padding: 25px 10px 30px;
   }
   .popup-upload {
     margin: 20px 0 30px;
   }
-  .btn-blue-icon {
+  .btn-big-icon {
     padding: 10px 25px;
   }
-  .btn-blue-icon__text {
+  .btn-big-icon__text {
     font-size: 20px;
+  }
+  .btn-big-icon__icon {
+    font-size: 36px;
+    padding-right: 20px;
+  }
+  .popup-upload--or {
+    display: block;
+  }
+  .popup-upload--or .popup-upload__or {
+    display: block;
+    margin: 15px 0;
+  }
+  .popup-upload-btns {
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 575px) {
