@@ -25,7 +25,8 @@ $(function() {
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 	$('.datepicker').datepicker({
-		language: 'ru'
+		language: 'ru',
+		autoclose: true
 	});
 })
 
@@ -35,8 +36,48 @@ $(function() {
 	if(!$select.length) return;
 
 	$select.selectize({
-		create: true,
+		readOnly: true, 
+		onDelete: function() { return false }
+	});
+
+});
+
+$(function() {
+
+	var $selectSearch = $('.js-select-search');
+	if(!$selectSearch.length) return;
+
+	$selectSearch.selectize({
+		create: false,
 		sortField: 'text'
+	});
+
+});
+
+$(function() {
+
+	$('select.js-select--toggle').on('change', function(){
+		$('.js-select--toggle-box').hide();
+		$('body').find(".js-select--toggle-box[data-index='" + $(this).val() + "']").show(); 
+	});
+
+});
+
+$(function() {
+
+	var $route = $('.js-route');
+	if(!$route.length) return;
+
+	var $routeRow = $route.find('.js-route-row:last-child').html(),
+		$routeDelBtn = $route.find('.js-route-row:first-child .btn-right__btn').html()
+
+	$(document).on('click','.js-route-add',function(){
+		$(this).parent().html($routeDelBtn);
+		$route.append($routeRow);
+	});
+
+	$(document).on('click','.js-route-del',function(){
+		$(this).closest('.js-route-row').remove();
 	});
 
 });
@@ -47,8 +88,9 @@ $(function() {
 	if(!$selectPrice.length) return;
 
 	$selectPrice.selectize({
-		create: true,
-		sortField: 'text',
+		create: false,
+		readOnly: true, 
+		onDelete: function() { return false },
 		onInitialize: function () {
 			var s = this;
 			this.revertSettings.$children.each(function () {

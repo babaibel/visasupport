@@ -2149,6 +2149,10 @@ img {
 }
 .breadcrumbs__link:hover {
   color: #fff;
+  background-color: #79d6fe;
+}
+.breadcrumbs__link:hover:after {
+  border-color: transparent transparent transparent #79d6fe;
 }
 .breadcrumbs__link:after {
   content: "";
@@ -2160,6 +2164,7 @@ img {
   border-right: 0;
   border-left-width: 30px;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 .breadcrumbs__link:before {
   content: "";
@@ -2482,6 +2487,34 @@ img {
 .document--ready .document__icon {
   display: block;
 }
+.datepicker-days {
+  font-size: 12px;
+}
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active:active {
+  background: #00b0fe;
+  border-color: #00b0fe;
+}
+.datepicker table tr td.active.active:hover,
+.datepicker table tr td.active.highlighted.active:hover,
+.datepicker table tr td.active.highlighted:active:hover,
+.datepicker table tr td.active:active:hover {
+  background: #009ee5;
+  border-color: #009ee5;
+}
+.js-select-price .selectize-input,
+.js-select .selectize-input {
+  cursor: pointer!important;
+}
+.js-select-price .selectize-input > input,
+.js-select .selectize-input > input {
+  display: none!important;
+}
+.selectize-dropdown [data-selectable] .highlight {
+  background: #98dfff;
+}
 @media screen and (max-width: 991px) {
   .breadcrumbs__item:first-child .breadcrumbs__link {
     padding-left: 20px;
@@ -2751,5 +2784,14 @@ img {
   }
   .breadcrumbs__item._prev {
     display: block;
+  }
+  .step-list--mob b {
+    display: block;
+  }
+  .h2--mob {
+    font-size: 26px;
+  }
+  .h3--mob {
+    font-size: 18px;
   }
 }

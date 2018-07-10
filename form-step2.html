@@ -128,7 +128,7 @@
 			<form>
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<h3 class="h3 text-center">Укажите даты поездки, требуемый тип визы и планируемый паршрут </h3>
+						<h3 class="h3 h3--mob text-center">Укажите даты поездки, требуемый тип визы и планируемый паршрут </h3>
 					</div>
 				</div>
 				<div class="row">
@@ -231,38 +231,43 @@
 				<div class="row">
 					<div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
 						<div class="row-subtitle">
-							<h3 class="h3 text-center">Маршрут</h3>
+							<h3 class="h3 h3--mob text-center">Маршрут</h3>
 							<p class="text-center"><i>перечислите города, которые планируете посетить во время поездки:</i></p>
 						</div>
-						<div class="form">
-							<div class="form-group">
-								<label for="inputVisa1">Срок действия визы</label>
-								<div class="btn-right">
-									<select id="inputVisa1" class="form-control js-select form-select">
-										<option selected>3 месяца</option>
-										<option>6 месяцев</option>
-										<option>12 месяцев</option>
-									</select>
-									<div class="btn-right__btn">
-										<a class="btn-with-icon btn-with-icon--red" href="#!">
-											<span class="btn-with-icon__icon icon-yycancel"></span>
-											<span class="btn-with-icon__text">Удалить</span>
-										</a>
+						<div class="form js-route">
+							<div class="js-route-row">
+								<div class="form-group">
+									<label for="inputCity1">Город</label>
+									<div class="btn-right">
+										<select id="inputCity1" class="form-control js-select-search form-select">
+											<option selected>Москва</option>
+											<option>Берлин</option>
+											<option>Калуга</option>
+										</select>
+										<div class="btn-right__btn">
+											<a class="btn-with-icon btn-with-icon--red js-route-del" href="#!">
+												<span class="btn-with-icon__icon icon-yycancel"></span>
+												<span class="btn-with-icon__text">Удалить</span>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="inputVisa1">Тип визы</label>
-								<div class="btn-right">
-									<select id="inputVisa1" class="form-control js-select form-select">
-										<option selected>Однократная</option>
-										<option>Многократная</option>
-									</select>
-									<div class="btn-right__btn">
-										<a class="btn-with-icon btn-with-icon--green" href="#!">
-											<span class="btn-with-icon__icon icon-yyadd"></span>
-											<span class="btn-with-icon__text">Добавить</span>
-										</a>
+							<div class="js-route-row">
+								<div class="form-group js-route-row">
+									<label for="inputCity2">Город</label>
+									<div class="btn-right">
+										<select id="inputCity2" class="form-control js-select-search form-select">
+											<option selected>Москва</option>
+											<option>Берлин</option>
+											<option>Калуга</option>
+										</select>
+										<div class="btn-right__btn">
+											<a class="btn-with-icon btn-with-icon--green js-route-add" href="#!">
+												<span class="btn-with-icon__icon icon-yyadd"></span>
+												<span class="btn-with-icon__text">Добавить</span>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
